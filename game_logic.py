@@ -2,8 +2,8 @@ import random
 game_options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(game_options)
 user_choice = input("Enter your choice (rock, paper, scissors): ").lower()
-print(computer_choice)
-print(user_choice)
+print(f"The dealer chose: {computer_choice}")
+print(f"You chose: {user_choice}")
 if user_choice == computer_choice:
     print("It's a tie!")
 elif (user_choice == "rock" and computer_choice == "scissors") or \
